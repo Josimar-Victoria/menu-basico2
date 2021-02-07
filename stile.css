@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+}
+nav {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+}
+nav ul {
+  list-style: none;
+}
+nav > ul {
+  display: table;
+  overflow: hidden;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+nav > ul li {
+  display: table-cell;
+}
+/*sub sum  */
+nav > ul > li:hover > ul {
+  display: block;
+  height: 100%;
+  
+}
+nav > ul > li > ul {
+  display: block;
+  position: absolute;
+  background-color: black;
+  left: 0px;
+  right: 0;
+  overflow: hidden;
+  height: 0%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  
+}
+nav > ul > li > ul{
+ display: none;
+}
+nav > ul li a {
+  color: white;
+  display: block;
+  line-height: 20px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration-line: none;
+  /*CSS3 Generator*/
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+nav > ul > li > ul > li a:hover {
+  background-color: #5da5a2;
+}
+nav > ul > li > a span {
+  background-color: #174459;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: -55px;
+  text-decoration-line: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+nav > ul > li > a span {
+  display: block;
+  line-height: 60px;
+}
+nav > ul > li > a:hover > span {
+  top: 0;
+} /*colores de mi menu desplegable*/
+nav ul li a .primero {
+  background-color: #0e5061;
+}
+nav ul li a .segundo {
+  background-color: #5da5a2;
+}
+nav ul li a .tercero {
+  background-color: #f25724;
+}
+nav ul li a .cuarto {
+  background-color: violet;
+}
+nav ul li a .quinto {
+  background-color: #37a4d9;
+}
